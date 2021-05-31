@@ -1,0 +1,20 @@
+
+<form>
+  <div class="mb-3">
+    <label for="wordinput" class="form-label">Word: </label>
+    <input type="text" class="form-control" name ="wordinput" id="wordinput" placeholder="Enter new word" [(ngModel)]="adat.word">
+  </div>
+  <div class="mb-3">
+    <label for="nagariinput" class="form-label">Nagari: </label>
+    <input type="text" class="form-control" name ="nagariinput" id="nagariinput" placeholder="Enter new nagari" [(ngModel)]="adat.nagari">
+  </div>
+  <div class="mb-3">
+    <label for="desinput" class="form-label">Describtion: </label>
+    <input type="text" class="form-control" name ="desinput" id="desinput" placeholder="Enter the description" [(ngModel)]="adat.description">
+  </div>
+  <div class="mb-3">
+  <label for="catinput" class="form-label">Category: </label>
+  <input type="text" class="form-control" name ="catinput" id="catinput" placeholder="Enter the category" [(ngModel)]="adat.category">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="save()">Submit</button>
+</form>

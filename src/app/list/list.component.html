@@ -1,0 +1,35 @@
+<table class="table table-striped table-hover" *ngIf="service.adatom">
+  <thead>
+  <tr>
+    <!--<th scope="col">Mandal</th>
+    <th scope="col">Sukta</th>
+    <th scope="col">Sung By</th>
+    <th scope="col">Sung By - Category</th>
+    <th scope="col">Sung For</th>
+    <th scope="col">Sung For - Category</th>-->
+    <th scope="col">Index</th>
+    <th scope="col">Word</th>
+    <th scope="col">Nagari</th>
+    <th scope="col">Describtion</th>
+    <th scope="col">Category</th>
+    <th scope="col"></th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let adat of service.adatom">
+    <!--<td>{{adat.mandal}}</td>
+    <td>{{adat.sukta}}</td>
+    <td>{{adat.sungby}}</td>
+    <td>{{adat.sungbycategory}}</td>
+    <td>{{adat.sungfor}}</td>
+    <td>{{adat.sungforcategory}}</td>-->
+    <td>{{service.adatom.indexOf(adat)}}</td>
+    <td>{{adat.word}}</td>
+    <td>{{adat.nagari}}</td>
+    <td>{{adat.description}}</td>
+    <td>{{adat.category}}</td>
+    <td><button class="btn" (click)="delete(adat)">Töröl</button></td>
+  </tr>
+  </tbody>
+</table>

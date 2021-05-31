@@ -1,0 +1,28 @@
+<br>
+<form>
+  <div class="mb-3">
+    <label for="index" class="form-label">Index: </label>
+    <input type="text" class="form-control" name ="index" id="index" placeholder="Enter index" [(ngModel)]="index">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="search()">Search</button>
+  </form>
+<br>
+<p>Name can be not changed. Click in the field to change data.</p>
+<form>
+  <div class="mb-3">
+    <label>Word:  {{adats.word}}</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" name ="nagariinput" id="nagariinput" placeholder="Enter new nagari" [(ngModel)]="adat.nagari">
+    <label for="nagariinput" >{{adats.nagari}}</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" name ="desinput" id="desinput" placeholder="Enter the description" [(ngModel)]="adat.description">
+    <label for="desinput" >{{adats.description}}</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" name ="catinput" id="catinput" placeholder="Enter the category" [(ngModel)]="adat.category">
+    <label for="catinput" >{{adats.category}}</label>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="update()">Update</button>
+</form>
