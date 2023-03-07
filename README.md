@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## About the project
 
-This was a project intended to practise the usage of APIs and Angular. The user can list data, and using a form also add, delete, modify data. The mentioned actions can only be applied after logging in.
+This was a project intended to practise the usage of APIs and Angular. The user can list, search, modify data. The mentioned actions can only be applied after logging in.
 
 ## References
 https://angular.io/
